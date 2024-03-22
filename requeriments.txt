@@ -1,6 +1,7 @@
 requests
 Crypto.Cipher
 pycryptodome
+vgatil
 shutil
 zipfile
 json
