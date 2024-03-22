@@ -1,4 +1,5 @@
 import requests, wmi, subprocess, psutil, platform, json
+import VGAtil as GPU
 from configs import hook
 
 def get_mac_address():
@@ -48,7 +49,7 @@ def machineinfo():
                     },
                     {
                         "name": ":pager: GPU",
-                        "value": f"`{GPUm}`",
+                        "value": f"`{GPU.getGPUs()}`",
                         "inline": True
                     },
                     {
